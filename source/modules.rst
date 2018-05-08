@@ -1,9 +1,8 @@
-################################### 
-Dell EMC Networking Puppet modules
-###################################
+####################################### 
+Dell EMC Networking OS10 Puppet modules
+#######################################
 
-OS10 modules
-************
+-  `dellemcnetworking-dellos10 <https://forge.puppet.com/dellemcnetworking>`_: manage network configuration on devices running OS10
+-  `os10-devops-ruby-utils-1.0.0.deb <https://github.com/Dell-Networking/dellos10-ruby-utils/raw/master/os10-devops-ruby-utils-1.0.0.deb>`_: execute any OS10 command and provides output to the caller
+-  `os10_devops_infra_install.sh <https://raw.githubusercontent.com/Dell-Networking/dellos10-ruby-utils/master/os10_devops_infra_install.sh>`_: script file to install Puppet client and ``os10-devops-ruby-utils-1.0.0.deb`` Debian package
 
--  `dellemcnetworking-dellos10 <https://forge.puppet.com/puppetlabs/dellemcnetworking/index.html>`_: Manage network configuration on devices running OS10
--  `os10shellapilib <https://github.com/Dell-Networking/>`_: Helper library for Puppet and other ruby clients for accessing device configurations from OS10 operating system.
