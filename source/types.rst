@@ -5,7 +5,7 @@ Dell EMC Networking Puppet types
 The Dell EMC Networking Puppet types facilitate device provisioning running Dell EMC Networking OS10 software. This information describes the Puppet types and attributes available in the Dell EMC Networking Puppet module.
 
 Type: os10_route
-################
+****************
 
 The ``os10_route`` resource type is used to manage static routes in OS10 switches.
 
@@ -21,7 +21,7 @@ ensure              Determine whether the route entry should be present or not
 ==============      ================================================
 
 Type: os10_snmp
-###############
+***************
 
 The ``os10_snmp`` resource type is to used to manage SNMP configurations in OS10 Enterprise Edition switches. The os10_snmp resource is not an ensurable type and does not have an ensure attribute.
 
@@ -38,7 +38,7 @@ Attribute                       Description
 =====================           ================================================
 
 Type: os10_monitor
-##################
+******************
 
 The ``os10_monitor`` resource type is to used to manage port-monitoring (mirroring) session configuration in OS10 Enterprise Edition switches.
 
@@ -55,7 +55,7 @@ Attribute        Description
 ===============  ===============================================================
 
 Type: os10_interface
-####################
+********************
 
 The ``os10_interface`` resource type is used to manage interface configuration in OS10 Enterprise Edition switches.
 
@@ -75,7 +75,7 @@ Attribute             Description
 ===================   ====================================================================
 
 Type: os10_image_upgrade
-########################
+************************
 
 The ``os10_image_upgrade`` resource type is used to upgrade/downgrade OS10 Enterprise Edition images by providing the filename and location of the image.
 
@@ -88,7 +88,7 @@ Attribute       Description
 =============   ===============================================================
 
 Type: os10_bgp
-##############
+**************
 
 The resource definition for ``os10_bgp`` that is used to configure base BGP configuration in OS10 Enterprise Edition switches.
 
@@ -118,7 +118,7 @@ Attribute                             Description
 ====================================  ====================================================================
 
 Type: os10_bgp_af
-#################
+*****************
 
 **Attributes**
 
@@ -141,7 +141,8 @@ Attribute                    Description
 ``redistribute``             Configures routing protocols that need to be redistributed; valid value is a list of (protocol value); protocol can be connected, ospf, or static; value can be blank or route-map string in the case of connected, static and blank or process-id in the case of ospf
 ==========================   ===================================================
 
-## Type: os10_bgp_neighbor
+Type: os10_bgp_neighbor
+***********************
 
 **Attributes**
 
@@ -170,7 +171,8 @@ Attribute                      Description
 ``weight``                     Configure the default weight for routes from the neighbor interface (1 to 4294967295)
 ============================   =================================================
 
-## Type: os10_bgp_neighbor_af
+Type: os10_bgp_neighbor_af
+**************************
 
 The resource definition for os10_bgp_neighbor_af that is used to configure address family subconfiguration (for both IPv4 and IPv6) under BGP neighbor subconfiguration.
 
@@ -193,7 +195,8 @@ Attribute              Description
 ``route_map``          Configures the names of the route-map; valid parameter is an array of two route-map names (up to 140 characters) for filtering incoming and outgoing routing updates
 ====================   =========================================================
 
-## Type: os10_lldp
+Type: os10_lldp
+***************
 
 The ``os10_lldp`` resource type is to used to manage global LLDP configuration in OS10 Enterprise Edition switches. The os10_lldp resource is not an ensurable type and hence does not have an ensure attribute.
 
@@ -210,7 +213,8 @@ Attribute                         Description
 ``med_network_policy``            Specifies the hash entries with a set of hash keys id<1-32>, app<guest-voice, guestvoice-signaling, softphone-voice, streaming-video, video-conferencing, voice-signaling, voice, video-signaling>, vlan_id<1-4093>, vlan_type<tag/untag>, priority<0-7>, dscp<0-63>
 ===============================   =============================================
 
-## Type: os10_lldp_interface
+Type: os10_lldp_interface
+*************************
 
 The ``os10_lldp_interface`` resource type is to used to manage LLDP configuration per interface in OS10 Enterprise Edition switches. The os10_lldp resource is not an ensurable type and does not have an ensure attribute. The per-interface name is given as argument for the resource.
 
